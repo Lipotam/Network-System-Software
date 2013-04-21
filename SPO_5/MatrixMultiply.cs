@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SPO_5
 {
@@ -8,6 +9,12 @@ namespace SPO_5
         private Matrix m1;
         private Matrix m2;
         private int size;
+
+
+        public int Chef { get; set; }
+        public bool IsAManager { get; set; }
+        public List<int> WorkersList { get; set; }
+        public int workerId { get; set; }
 
         public MatrixMultiply(int comSize, int size)
         {
